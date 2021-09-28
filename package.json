@@ -16,13 +16,13 @@
   "author": "GreensGo",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/GustafDelport/GreensGo-V2-FrontEnd/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/GustafDelport/GreensGo-V2-FrontEnd#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.13.2"
+    "mongoose": "^6.0.8"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
