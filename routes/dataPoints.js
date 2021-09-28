@@ -19,27 +19,27 @@ router.get('/all',async (req,res) => {
 })
 
 //No use yet
-router.post('/send',async (req,res) => {
+// router.post('/send',async (req,res) => {
      
-    const Data = new SensorData({
-         Time: req.body.Time,
-         Temperature: req.body.Temperature, 
-         HumidityPercentage: req.body.HumidityPercentage, 
-         MoisturePercentage: req.body.MoisturePercentage, 
-         LightIndex: req.body.LightIndex    
-    })
+//     const Data = new SensorData({
+//          Time: req.body.Time,
+//          Temperature: req.body.Temperature, 
+//          HumidityPercentage: req.body.HumidityPercentage, 
+//          MoisturePercentage: req.body.MoisturePercentage, 
+//          LightIndex: req.body.LightIndex    
+//     })
 
-    try {
-         const newData = await Data.save()
-         res.status(201).json(newData)
+//     try {
+//          const newData = await Data.save()
+//          res.status(201).json(newData)
 
-    } catch (error) {
-         res.status(400).json({ message: error.message})
-    }
-})
+//     } catch (error) {
+//          res.status(400).json({ message: error.message})
+//     }
+// })
 
-router.post('/point',async (req,res) => {
-    console.log(req);
-})
+// router.post('/point',async (req,res) => {
+//     console.log(req);
+// })
 
 module.exports = router
